@@ -44,13 +44,13 @@ Vector rotate(const Vector& vec, const Vector& rotationP, RotateOrder ro, bool c
 
 	if ((rotationP != lastRot) || (!cached)) {
 		lastRot = rotationP;
-		sinx = sin(rotation.x);
-		siny = sin(rotation.y);
-		sinz = sin(rotation.z);
+		sinx = std::sin(rotation.x);
+		siny = std::sin(rotation.y);
+		sinz = std::sin(rotation.z);
 
-		cosx = cos(rotation.x);
-		cosy = cos(rotation.y);
-		cosz = cos(rotation.z);
+		cosx = std::cos(rotation.x);
+		cosy = std::cos(rotation.y);
+		cosz = std::cos(rotation.z);
 	}
 
 	Vector result = {};

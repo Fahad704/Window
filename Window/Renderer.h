@@ -1,4 +1,5 @@
 #pragma once
+#include <cmath>
 #include "Window.h"
 #include "Scene.h"
 //CPU renderer
